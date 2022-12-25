@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package incrementValue;
+option go_package = "https://github.com/suvihanninen/DistHashTable.git;hashTable";
+
+
+service IncrementValue {
+    rpc Increment (AddRequest) returns (Response) {}
+   
+    
+}
+
+message PutRAddRequestequest {
+    int32 value = 1;
+}
+
+message Response {
+    int32 response = 1;
+
+}
