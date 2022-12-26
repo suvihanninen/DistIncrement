@@ -6,8 +6,17 @@ option go_package = "https://github.com/suvihanninen/DistIncrement.git;increment
 
 service IncrementValue {
     rpc Increment (AddRequest) returns (Response) {}
-   
-    
+    rpc GetHeartBeat(BeatRequest)returns (BeatAck){}
+    rpc AddToValue(AddRequest) returns (Response){} 
+}
+
+message BeatRequest {
+    string message = 1;
+}
+
+message BeatAck {
+    string port = 1;
+
 }
 
 message AddRequest {
