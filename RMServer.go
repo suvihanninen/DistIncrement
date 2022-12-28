@@ -24,6 +24,7 @@ type RMServer struct {
 	time      time.Time
 	primary   distIncrement.IncrementValueClient
 	value     int32
+	lock      chan bool
 }
 
 func main() {
@@ -42,11 +43,15 @@ func main() {
 		isPrimary: primary,
 		value:     -1,
 		primary:   nil,
+		lock:      make(chan bool, 1),
 	}
 
 	//log to file instead of console
 	f := setLogRMServer()
 	defer f.Close()
+
+	//unlock
+	rmServer.lock <- true
 
 	//Primary needs to listen so that replica managers can ask if it's alive
 	//Replica managers need to listen for incoming data to be replicated
@@ -145,19 +150,23 @@ func (RM *RMServer) GetHeartBeat(ctx context.Context, Heartbeat *distIncrement.B
 }
 
 func (RM *RMServer) Increment(ctx context.Context, AddRequest *distIncrement.AddRequest) (*distIncrement.Response, error) {
+	<-RM.lock
 	result, err := RM.addValueToRM(AddRequest.GetValue())
 	if err != nil {
 		log.Fatalf("Adding value to Replica Managers failed inside RMServer: %s", err)
 	}
-
+	RM.lock <- true
 	return &distIncrement.Response{Response: result}, nil
 }
 
 func (rm *RMServer) addValueToRM(value int32) (int32, error) {
+
 	//Update Primary Replica
 	rm.value = rm.value + 1
-	addValue := &distIncrement.AddRequest{Value: value}
+	log.Printf("Primary Replica %v added value. Value: %v", rm.id, rm.value)
 
+	addValue := &distIncrement.AddRequest{Value: value}
+	time.Sleep(2 * time.Second)
 	//Broadcasting the Increment request to all replica managers
 	for id, server := range rm.peers {
 		_, err := server.AddToValue(rm.ctx, addValue)
@@ -167,7 +176,7 @@ func (rm *RMServer) addValueToRM(value int32) (int32, error) {
 			delete(rm.peers, id)
 		}
 
-		log.Printf("RMServer %v: Value added to replica manager on port %s: ", rm.id, id)
+		//log.Printf("RMServer %v: Value added to replica manager on port %s: ", rm.id, id)
 	}
 
 	return rm.value, nil
@@ -176,8 +185,7 @@ func (rm *RMServer) addValueToRM(value int32) (int32, error) {
 func (RM *RMServer) AddToValue(ctx context.Context, AddRequest *distIncrement.AddRequest) (*distIncrement.Response, error) {
 	RM.value = RM.value + 1
 
-	println("AddToValue: Added value. New value on RM: ", RM.value)
-	log.Printf("RMServer %v: Added value. New value on RM: ", RM.id, RM.value)
+	log.Printf("Replica Manager %v added value. Value: %v", RM.id, RM.value)
 
 	return &distIncrement.Response{Response: RM.value}, nil
 }

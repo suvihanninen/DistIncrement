@@ -1,11 +1,11 @@
 package main
 
 import (
-	"bufio"
 	"context"
 	"log"
+	"math/rand"
 	"os"
-	"strconv"
+	"time"
 
 	// this has to be the same as the go.mod module,
 	// followed by the path to the folder the proto file is in.
@@ -31,16 +31,12 @@ func main() {
 	defer connection.Close()
 
 	go func() {
-		scanner := bufio.NewScanner(os.Stdin)
-		println("Enter a number and press Enter")
 
-		for {
-			scanner.Scan()
-			text := scanner.Text()
-			_, err := strconv.Atoi(text)
-			if err != nil {
-				log.Fatalf("String conversion to int didn't succeed: %v", err)
-			}
+		for i := 0; i < 20; i++ {
+			min := 1
+			max := 4
+			delay := rand.Intn(max-min) + min
+			time.Sleep(time.Duration(delay) * time.Second)
 
 			addRequest := &distIncrement.AddRequest{
 				Value: int32(1),

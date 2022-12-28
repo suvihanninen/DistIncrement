@@ -1,312 +1,254 @@
-2022/12/26 10:50:48 RMServer 5001: Trying to dial: 5002
-2022/12/26 10:50:50 RMServer 5002: Trying to dial: 5001
-2022/12/26 10:50:50 We have a primary replica
-2022/12/26 10:50:50 RMServer 5002: Trying to dial: 5003
-2022/12/26 10:50:53 RMServer 5001: Trying to dial: 5003
-2022/12/26 10:50:53 RMServer 5003: Trying to dial: 5001
-2022/12/26 10:50:53 We have a primary replica
-2022/12/26 10:50:53 RMServer 5003: Trying to dial: 5002
-2022/12/26 10:50:57 RMServer 5002: Something went wrong while sending heartbeat
-2022/12/26 10:50:57 RMServer 5002: Error:%!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
-2022/12/26 10:50:57 RMServer 5002: Exception, We did not get heartbeat back from Primary Replica with port %!v(MISSING). It has died, 
-2022/12/26 10:50:57 RMServer 5002: Leader election started with Bully Algorithm
-2022/12/26 10:50:57 RMServer 5002: New Primary Replica has port 5002 
-2022/12/26 10:50:57 RMServer 5003: Something went wrong while sending heartbeat
-2022/12/26 10:50:57 RMServer 5003: Error:%!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
-2022/12/26 10:50:57 RMServer 5003: Exception, We did not get heartbeat back from Primary Replica with port %!v(MISSING). It has died, 
-2022/12/26 10:50:57 RMServer 5003: Leader election started with Bully Algorithm
-2022/12/26 10:50:57 RMServer 5003: New Primary Replica has port 5002 
-2022/12/26 10:52:08 RMServer 5001: Trying to dial: 5002
-2022/12/26 10:52:10 RMServer 5002: Trying to dial: 5001
-2022/12/26 10:52:10 We have a primary replica
-2022/12/26 10:52:10 RMServer 5002: Trying to dial: 5003
-2022/12/26 10:52:11 RMServer 5001: Trying to dial: 5003
-2022/12/26 10:52:12 RMServer 5003: Trying to dial: 5001
-2022/12/26 10:52:12 We have a primary replica
-2022/12/26 10:52:12 RMServer 5003: Trying to dial: 5002
-2022/12/26 10:52:16 RMServer 5003: Something went wrong while sending heartbeat
-2022/12/26 10:52:16 RMServer 5003: Error:%!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
-2022/12/26 10:52:16 RMServer 5003: Exception, We did not get heartbeat back from Primary Replica with port %!v(MISSING). It has died, 
-2022/12/26 10:52:16 RMServer 5003: Leader election started with Bully Algorithm
-2022/12/26 10:52:16 RMServer 5003: New Primary Replica has port 5002 
-2022/12/26 10:52:17 RMServer 5002: Something went wrong while sending heartbeat
-2022/12/26 10:52:17 RMServer 5002: Error:%!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
-2022/12/26 10:52:17 RMServer 5002: Exception, We did not get heartbeat back from Primary Replica with port %!v(MISSING). It has died, 
-2022/12/26 10:52:17 RMServer 5002: Leader election started with Bully Algorithm
-2022/12/26 10:52:17 RMServer 5002: New Primary Replica has port 5002 
-2022/12/26 11:24:14 RMServer 5003: Something went wrong while sending heartbeat
-2022/12/26 11:24:14 RMServer 5003: Error:%!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5002: connect: connection refused")
-2022/12/26 11:24:14 RMServer 5003: Exception, We did not get heartbeat back from Primary Replica with port %!v(MISSING). It has died, 
-2022/12/26 11:24:14 RMServer 5003: Leader election started with Bully Algorithm
-2022/12/26 11:24:14 RMServer 5003: New Primary Replica has port 5002 
-2022/12/26 11:24:19 RMServer 5001: Trying to dial: 5002
-2022/12/26 11:27:19 RMServer 5001: Trying to dial: 5002
-2022/12/26 11:28:36 RMServer 5001: Trying to dial: 5002
-2022/12/26 11:28:45 RMServer 5002: Trying to dial: 5001
-2022/12/26 11:28:45 We have assigned a primary replica
-2022/12/26 11:28:45 RMServer 5002: Trying to dial: 5003
-2022/12/26 11:28:45 RMServer 5001: Trying to dial: 5003
-2022/12/26 11:28:49 RMServer 5003: Trying to dial: 5001
-2022/12/26 11:28:49 We have assigned a primary replica
-2022/12/26 11:28:49 RMServer 5003: Trying to dial: 5002
-2022/12/26 11:28:59 FEServer 4001: Server on port 4001: Listening at [::]:4001
-2022/12/26 11:28:59 FEServer 4001: We are trying to listen calls from client: 4001
-2022/12/26 11:28:59 FEServer 4001: Connection established with Primary Replica.
-2022/12/26 11:29:01 FEServer 4002: Server on port 4002: Listening at [::]:4002
-2022/12/26 11:29:01 FEServer 4002: We are trying to listen calls from client: 4002
-2022/12/26 11:29:01 FEServer 4002: Connection established with Primary Replica.
-2022/12/26 11:29:15 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=2)
-2022/12/26 11:29:15 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 11:29:15 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=2)
-2022/12/26 11:29:15 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 11:29:15 The value: %!(EXTRA int32=2)
-2022/12/26 11:29:16 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=4)
-2022/12/26 11:29:16 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 11:29:16 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=4)
-2022/12/26 11:29:16 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 11:29:16 The value: %!(EXTRA int32=4)
-2022/12/26 11:29:17 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=6)
-2022/12/26 11:29:17 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 11:29:17 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=6)
-2022/12/26 11:29:17 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 11:29:17 The value: %!(EXTRA int32=6)
-2022/12/26 11:29:17 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=7)
-2022/12/26 11:29:17 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 11:29:17 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=7)
-2022/12/26 11:29:17 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 11:29:17 The value: %!(EXTRA int32=7)
-2022/12/26 11:33:15 RMServer 5003: Something went wrong while sending heartbeat
-2022/12/26 11:33:15 RMServer 5003: Error:%!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
-2022/12/26 11:33:15 RMServer 5003: Exception, We did not get heartbeat back from Primary Replica with port %!v(MISSING). It has died, 
-2022/12/26 11:33:15 RMServer 5003: Leader election started with Bully Algorithm
-2022/12/26 11:33:15 RMServer 5003: New Primary Replica has port 5002 
-2022/12/26 11:33:17 RMServer 5002: Something went wrong while sending heartbeat
-2022/12/26 11:33:17 RMServer 5002: Error:%!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
-2022/12/26 11:33:17 RMServer 5002: Exception, We did not get heartbeat back from Primary Replica with port %!v(MISSING). It has died, 
-2022/12/26 11:33:17 RMServer 5002: Leader election started with Bully Algorithm
-2022/12/26 11:33:17 RMServer 5002: New Primary Replica has port 5002 
-2022/12/26 11:41:24 RMServer 5001: Trying to dial: 5002
-2022/12/26 11:41:25 RMServer 5002: Trying to dial: 5001
-2022/12/26 11:41:25 We have assigned a primary replica
-2022/12/26 11:41:25 RMServer 5002: Trying to dial: 5003
-2022/12/26 11:41:25 RMServer 5001: Trying to dial: 5003
-2022/12/26 11:41:26 RMServer 5003: Trying to dial: 5001
-2022/12/26 11:41:26 We have assigned a primary replica
-2022/12/26 11:41:26 RMServer 5003: Trying to dial: 5002
-2022/12/26 11:41:31 FEServer 4001: Server on port 4001: Listening at [::]:4001
-2022/12/26 11:41:31 FEServer 4001: We are trying to listen calls from client: 4001
-2022/12/26 11:41:31 FEServer 4001: Connection established with Primary Replica.
-2022/12/26 11:41:33 FEServer 4002: Server on port 4002: Listening at [::]:4002
-2022/12/26 11:41:33 FEServer 4002: We are trying to listen calls from client: 4002
-2022/12/26 11:41:33 FEServer 4002: Connection established with Primary Replica.
-2022/12/26 11:41:43 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=4)
-2022/12/26 11:41:43 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 11:41:43 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=4)
-2022/12/26 11:41:43 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 11:41:43 The value: %!(EXTRA int32=4)
-2022/12/26 11:41:44 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=2)
-2022/12/26 11:41:44 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 11:41:44 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=2)
-2022/12/26 11:41:44 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 11:41:44 The value: %!(EXTRA int32=6)
-2022/12/26 11:41:45 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=5)
-2022/12/26 11:41:45 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 11:41:45 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=5)
-2022/12/26 11:41:45 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 11:41:45 The value: %!(EXTRA int32=11)
-2022/12/26 11:41:46 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=6)
-2022/12/26 11:41:46 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 11:41:46 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=6)
-2022/12/26 11:41:46 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 11:41:46 The value: %!(EXTRA int32=17)
-2022/12/26 11:41:48 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=2)
-2022/12/26 11:41:48 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 11:41:48 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=2)
-2022/12/26 11:41:48 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 11:41:48 The value: %!(EXTRA int32=19)
-2022/12/26 11:41:50 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=6)
-2022/12/26 11:41:50 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 11:41:50 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=6)
-2022/12/26 11:41:50 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 11:41:50 The value: %!(EXTRA int32=25)
-2022/12/26 11:41:50 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=8)
-2022/12/26 11:41:50 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 11:41:50 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=8)
-2022/12/26 11:41:50 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 11:41:50 The value: %!(EXTRA int32=33)
-2022/12/26 13:50:26 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=7)
-2022/12/26 13:50:26 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 13:50:26 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=7)
-2022/12/26 13:50:26 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 13:50:26 The value: %!(EXTRA int32=40)
-2022/12/26 13:50:39 RMServer 5003: Something went wrong while sending heartbeat
-2022/12/26 13:50:39 RMServer 5003: Error:%!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
-2022/12/26 13:50:39 RMServer 5003: Exception, We did not get heartbeat back from Primary Replica with port %!v(MISSING). It has died, 
-2022/12/26 13:50:39 RMServer 5003: Leader election started with Bully Algorithm
-2022/12/26 13:50:39 RMServer 5003: New Primary Replica has port 5002 
-2022/12/26 13:50:41 RMServer 5002: Something went wrong while sending heartbeat
-2022/12/26 13:50:41 RMServer 5002: Error:%!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
-2022/12/26 13:50:41 RMServer 5002: Exception, We did not get heartbeat back from Primary Replica with port %!v(MISSING). It has died, 
-2022/12/26 13:50:41 RMServer 5002: Leader election started with Bully Algorithm
-2022/12/26 13:50:41 RMServer 5002: New Primary Replica has port 5002 
-2022/12/26 13:50:46 FEServer 4002: Error: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused"
-2022/12/26 13:50:46 FEServer 4002: Dialing to new PrimaryReplica on port %!(EXTRA int64=5002)
-2022/12/26 13:50:46 FEServer 4002: Connection established with Primary Replica.
-2022/12/26 13:50:46 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=3)
-2022/12/26 13:50:46 RMServer 5002: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 13:50:46 The value: %!(EXTRA int32=3)
-2022/12/26 13:50:50 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=4)
-2022/12/26 13:50:50 RMServer 5002: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 13:50:50 The value: %!(EXTRA int32=7)
-2022/12/26 13:50:52 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=2)
-2022/12/26 13:50:52 RMServer 5002: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 13:50:52 The value: %!(EXTRA int32=9)
-2022/12/26 13:50:53 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=5)
-2022/12/26 13:50:53 RMServer 5002: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 13:50:53 The value: %!(EXTRA int32=14)
-2022/12/26 13:55:18 RMServer 5001: Trying to dial: 5002
-2022/12/26 13:55:19 RMServer 5002: Trying to dial: 5001
-2022/12/26 13:55:19 We have assigned a primary replica
-2022/12/26 13:55:19 RMServer 5002: Trying to dial: 5003
-2022/12/26 13:55:21 RMServer 5001: Trying to dial: 5003
-2022/12/26 13:55:22 RMServer 5003: Trying to dial: 5001
-2022/12/26 13:55:22 We have assigned a primary replica
-2022/12/26 13:55:22 RMServer 5003: Trying to dial: 5002
-2022/12/26 13:55:25 FEServer 4001: Server on port 4001: Listening at [::]:4001
-2022/12/26 13:55:25 FEServer 4001: We are trying to listen calls from client: 4001
-2022/12/26 13:55:25 FEServer 4001: Connection established with Primary Replica.
-2022/12/26 13:55:28 FEServer 4002: Server on port 4002: Listening at [::]:4002
-2022/12/26 13:55:28 FEServer 4002: We are trying to listen calls from client: 4002
-2022/12/26 13:55:28 FEServer 4002: Connection established with Primary Replica.
-2022/12/26 13:55:37 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=4)
-2022/12/26 13:55:37 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 13:55:37 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=4)
-2022/12/26 13:55:37 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 13:55:37 The value: %!(EXTRA int32=4)
-2022/12/26 13:55:39 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=7)
-2022/12/26 13:55:39 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 13:55:39 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=7)
-2022/12/26 13:55:39 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 13:55:39 The value: %!(EXTRA int32=7)
-2022/12/26 13:55:48 RMServer 5003: Something went wrong while sending heartbeat
-2022/12/26 13:55:48 RMServer 5003: Error:%!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
-2022/12/26 13:55:48 RMServer 5003: Exception, We did not get heartbeat back from Primary Replica with port %!v(MISSING). It has died, 
-2022/12/26 13:55:48 RMServer 5003: Leader election started with Bully Algorithm
-2022/12/26 13:55:48 RMServer 5003: New Primary Replica has port 5002 
-2022/12/26 13:55:48 RMServer 5002: Something went wrong while sending heartbeat
-2022/12/26 13:55:48 RMServer 5002: Error:%!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
-2022/12/26 13:55:48 RMServer 5002: Exception, We did not get heartbeat back from Primary Replica with port %!v(MISSING). It has died, 
-2022/12/26 13:55:48 RMServer 5002: Leader election started with Bully Algorithm
-2022/12/26 13:55:48 RMServer 5002: New Primary Replica has port 5002 
-2022/12/26 13:55:52 FEServer 4002: Error: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused"
-2022/12/26 13:55:52 FEServer 4002: Dialing to new PrimaryReplica on port %!(EXTRA int64=5002)
-2022/12/26 13:55:52 FEServer 4002: Connection established with Primary Replica.
-2022/12/26 13:55:52 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=11)
-2022/12/26 13:55:52 RMServer 5002: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 13:55:52 The value: %!(EXTRA int32=11)
-2022/12/26 13:55:57 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=16)
-2022/12/26 13:55:57 RMServer 5002: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 13:55:57 The value: %!(EXTRA int32=16)
-2022/12/26 13:56:04 Client :4002: Adding failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :4002: connect: connection refused")
-2022/12/26 13:56:04 Client :4002: FEServer has died
-2022/12/26 13:56:04 Client: FEServer on port :4002 is not listening anymore. It has died
-2022/12/26 13:56:04 Client: Redialing to new port: :4001
-2022/12/26 13:56:04 Client: Client has connected to new FEServer on port :4001
-2022/12/26 13:56:04 FEServer 4001: Error: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused"
-2022/12/26 13:56:04 FEServer 4001: Dialing to new PrimaryReplica on port %!(EXTRA int64=5002)
-2022/12/26 13:56:04 FEServer 4001: Connection established with Primary Replica.
-2022/12/26 13:56:04 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=21)
-2022/12/26 13:56:04 RMServer 5002: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 13:56:04 The value: %!(EXTRA int32=21)
-2022/12/26 13:56:07 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=23)
-2022/12/26 13:56:07 RMServer 5002: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 13:56:07 The value: %!(EXTRA int32=23)
-2022/12/26 14:21:38 RMServer 5001: Trying to dial: 5002
-2022/12/26 14:21:39 RMServer 5002: Trying to dial: 5001
-2022/12/26 14:21:39 We have assigned a primary replica
-2022/12/26 14:21:39 RMServer 5002: Trying to dial: 5003
-2022/12/26 14:21:40 RMServer 5001: Trying to dial: 5003
-2022/12/26 14:21:41 RMServer 5003: Trying to dial: 5001
-2022/12/26 14:21:41 We have assigned a primary replica
-2022/12/26 14:21:41 RMServer 5003: Trying to dial: 5002
-2022/12/26 14:21:44 FEServer 4002: Server on port 4002: Listening at [::]:4002
-2022/12/26 14:21:44 FEServer 4002: We are trying to listen calls from client: 4002
-2022/12/26 14:21:44 FEServer 4002: Connection established with Primary Replica.
-2022/12/26 14:21:45 FEServer 4001: Server on port 4001: Listening at [::]:4001
-2022/12/26 14:21:45 FEServer 4001: We are trying to listen calls from client: 4001
-2022/12/26 14:21:45 FEServer 4001: Connection established with Primary Replica.
-2022/12/26 14:21:53 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=0)
-2022/12/26 14:21:53 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 14:21:53 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=0)
-2022/12/26 14:21:53 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 14:21:53 The value: %!(EXTRA int32=0)
-2022/12/26 14:21:54 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=1)
-2022/12/26 14:21:54 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 14:21:54 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=1)
-2022/12/26 14:21:54 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 14:21:54 The value: %!(EXTRA int32=1)
-2022/12/26 14:21:55 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=2)
-2022/12/26 14:21:55 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 14:21:55 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=2)
-2022/12/26 14:21:55 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 14:21:55 The value: %!(EXTRA int32=2)
-2022/12/26 14:21:57 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=3)
-2022/12/26 14:21:57 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 14:21:57 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=3)
-2022/12/26 14:21:57 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 14:21:57 The value: %!(EXTRA int32=3)
-2022/12/26 14:21:58 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=4)
-2022/12/26 14:21:58 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 14:21:58 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=4)
-2022/12/26 14:21:58 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 14:21:58 The value: %!(EXTRA int32=4)
-2022/12/26 14:22:00 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=5)
-2022/12/26 14:22:00 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 14:22:00 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=5)
-2022/12/26 14:22:00 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 14:22:00 The value: %!(EXTRA int32=5)
-2022/12/26 14:22:00 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=6)
-2022/12/26 14:22:00 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 14:22:00 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=6)
-2022/12/26 14:22:00 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 14:22:00 The value: %!(EXTRA int32=6)
-2022/12/26 14:22:01 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=7)
-2022/12/26 14:22:01 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 14:22:01 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=7)
-2022/12/26 14:22:01 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 14:22:01 The value: %!(EXTRA int32=7)
-2022/12/26 14:22:02 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=8)
-2022/12/26 14:22:02 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 14:22:02 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=8)
-2022/12/26 14:22:02 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 14:22:02 The value: %!(EXTRA int32=8)
-2022/12/26 14:22:03 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=9)
-2022/12/26 14:22:03 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 14:22:03 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=9)
-2022/12/26 14:22:03 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 14:22:03 The value: %!(EXTRA int32=9)
-2022/12/26 14:28:00 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=10)
-2022/12/26 14:28:00 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 14:28:00 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=10)
-2022/12/26 14:28:00 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 14:28:00 The value: %!(EXTRA int32=10)
-2022/12/26 14:28:01 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=11)
-2022/12/26 14:28:01 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 14:28:01 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=11)
-2022/12/26 14:28:01 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 14:28:01 The value: %!(EXTRA int32=11)
-2022/12/26 14:28:03 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=12)
-2022/12/26 14:28:03 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 14:28:03 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=12)
-2022/12/26 14:28:03 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 14:28:03 The value: %!(EXTRA int32=12)
-2022/12/26 14:28:03 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=13)
-2022/12/26 14:28:03 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 14:28:03 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=13)
-2022/12/26 14:28:03 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 14:28:03 The value: %!(EXTRA int32=13)
-2022/12/26 14:28:04 RMServer 5002: Added value. New value on RM: %!(EXTRA int32=14)
-2022/12/26 14:28:04 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
-2022/12/26 14:28:04 RMServer 5003: Added value. New value on RM: %!(EXTRA int32=14)
-2022/12/26 14:28:04 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
-2022/12/26 14:28:04 The value: %!(EXTRA int32=14)
+2022/12/27 11:40:46 RMServer 5001: Trying to dial: 5002
+2022/12/27 11:40:48 RMServer 5002: Trying to dial: 5001
+2022/12/27 11:40:48 We have assigned a primary replica
+2022/12/27 11:40:48 RMServer 5002: Trying to dial: 5003
+2022/12/27 11:40:49 RMServer 5001: Trying to dial: 5003
+2022/12/27 11:40:51 RMServer 5003: Trying to dial: 5001
+2022/12/27 11:40:51 We have assigned a primary replica
+2022/12/27 11:40:51 RMServer 5003: Trying to dial: 5002
+2022/12/27 11:40:59 FEServer 4001: Server on port 4001: Listening at [::]:4001
+2022/12/27 11:40:59 FEServer 4001: We are trying to listen calls from client: 4001
+2022/12/27 11:40:59 FEServer 4001: Connection established with Primary Replica.
+2022/12/27 11:41:01 FEServer 4002: Server on port 4002: Listening at [::]:4002
+2022/12/27 11:41:01 FEServer 4002: We are trying to listen calls from client: 4002
+2022/12/27 11:41:01 FEServer 4002: Connection established with Primary Replica.
+2022/12/27 11:41:08 Primary Replica 5001 added value. Value: 0
+2022/12/27 11:41:10 Replica Manager 5002 added value. Value: 0
+2022/12/27 11:41:10 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:41:10 Replica Manager 5003 added value. Value: 0
+2022/12/27 11:41:10 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:41:10 The value: %!(EXTRA int32=0)
+2022/12/27 11:41:11 Primary Replica 5001 added value. Value: 1
+2022/12/27 11:41:13 Replica Manager 5002 added value. Value: 1
+2022/12/27 11:41:13 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:41:13 Replica Manager 5003 added value. Value: 1
+2022/12/27 11:41:13 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:41:13 Primary Replica 5001 added value. Value: 2
+2022/12/27 11:41:13 The value: %!(EXTRA int32=1)
+2022/12/27 11:41:15 Replica Manager 5002 added value. Value: 2
+2022/12/27 11:41:15 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:41:15 Replica Manager 5003 added value. Value: 2
+2022/12/27 11:41:15 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:41:15 Primary Replica 5001 added value. Value: 3
+2022/12/27 11:41:15 The value: %!(EXTRA int32=2)
+2022/12/27 11:41:17 Replica Manager 5002 added value. Value: 3
+2022/12/27 11:41:17 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:41:17 Replica Manager 5003 added value. Value: 3
+2022/12/27 11:41:17 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:41:17 The value: %!(EXTRA int32=3)
+2022/12/27 11:41:18 Primary Replica 5001 added value. Value: 4
+2022/12/27 11:41:20 Replica Manager 5003 added value. Value: 4
+2022/12/27 11:41:20 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:41:20 Replica Manager 5002 added value. Value: 4
+2022/12/27 11:41:20 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:41:20 The value: %!(EXTRA int32=4)
+2022/12/27 11:41:20 Primary Replica 5001 added value. Value: 5
+2022/12/27 11:41:22 Replica Manager 5003 added value. Value: 5
+2022/12/27 11:41:22 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:41:22 Replica Manager 5002 added value. Value: 5
+2022/12/27 11:41:22 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:41:22 The value: %!(EXTRA int32=5)
+2022/12/27 11:41:23 Primary Replica 5001 added value. Value: 6
+2022/12/27 11:41:25 Replica Manager 5002 added value. Value: 6
+2022/12/27 11:41:25 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:41:25 Replica Manager 5003 added value. Value: 6
+2022/12/27 11:41:25 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:41:25 Primary Replica 5001 added value. Value: 7
+2022/12/27 11:41:25 The value: %!(EXTRA int32=6)
+2022/12/27 11:41:27 Replica Manager 5002 added value. Value: 7
+2022/12/27 11:41:27 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:41:27 Replica Manager 5003 added value. Value: 7
+2022/12/27 11:41:27 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:41:27 Primary Replica 5001 added value. Value: 8
+2022/12/27 11:41:27 The value: %!(EXTRA int32=7)
+2022/12/27 11:41:29 Replica Manager 5002 added value. Value: 8
+2022/12/27 11:41:29 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:41:29 Replica Manager 5003 added value. Value: 8
+2022/12/27 11:41:29 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:41:29 Primary Replica 5001 added value. Value: 9
+2022/12/27 11:41:29 The value: %!(EXTRA int32=8)
+2022/12/27 11:41:31 Replica Manager 5002 added value. Value: 9
+2022/12/27 11:41:31 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:41:31 Replica Manager 5003 added value. Value: 9
+2022/12/27 11:41:31 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:41:31 Primary Replica 5001 added value. Value: 10
+2022/12/27 11:41:31 The value: %!(EXTRA int32=9)
+2022/12/27 11:41:33 Replica Manager 5002 added value. Value: 10
+2022/12/27 11:41:33 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:41:33 Replica Manager 5003 added value. Value: 10
+2022/12/27 11:41:33 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:41:33 Primary Replica 5001 added value. Value: 11
+2022/12/27 11:41:33 The value: %!(EXTRA int32=10)
+2022/12/27 11:41:35 Replica Manager 5002 added value. Value: 11
+2022/12/27 11:41:35 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:41:35 Replica Manager 5003 added value. Value: 11
+2022/12/27 11:41:35 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:41:35 Primary Replica 5001 added value. Value: 12
+2022/12/27 11:41:35 The value: %!(EXTRA int32=11)
+2022/12/27 11:41:37 Replica Manager 5002 added value. Value: 12
+2022/12/27 11:41:37 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:41:37 Replica Manager 5003 added value. Value: 12
+2022/12/27 11:41:37 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:41:37 Primary Replica 5001 added value. Value: 13
+2022/12/27 11:41:37 The value: %!(EXTRA int32=12)
+2022/12/27 11:41:39 Replica Manager 5002 added value. Value: 13
+2022/12/27 11:41:39 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:41:39 Replica Manager 5003 added value. Value: 13
+2022/12/27 11:41:39 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:41:39 The value: %!(EXTRA int32=13)
+2022/12/27 11:41:40 Primary Replica 5001 added value. Value: 14
+2022/12/27 11:41:42 Replica Manager 5003 added value. Value: 14
+2022/12/27 11:41:42 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:41:42 Replica Manager 5002 added value. Value: 14
+2022/12/27 11:41:42 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:41:42 Primary Replica 5001 added value. Value: 15
+2022/12/27 11:41:42 The value: %!(EXTRA int32=14)
+2022/12/27 11:41:44 Replica Manager 5002 added value. Value: 15
+2022/12/27 11:41:44 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:41:44 Replica Manager 5003 added value. Value: 15
+2022/12/27 11:41:44 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:41:44 The value: %!(EXTRA int32=15)
+2022/12/27 11:41:44 Primary Replica 5001 added value. Value: 16
+2022/12/27 11:41:46 Replica Manager 5002 added value. Value: 16
+2022/12/27 11:41:46 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:41:46 Replica Manager 5003 added value. Value: 16
+2022/12/27 11:41:46 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:41:46 Primary Replica 5001 added value. Value: 17
+2022/12/27 11:41:46 The value: %!(EXTRA int32=16)
+2022/12/27 11:41:48 Replica Manager 5002 added value. Value: 17
+2022/12/27 11:41:48 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:41:48 Replica Manager 5003 added value. Value: 17
+2022/12/27 11:41:48 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:41:48 Primary Replica 5001 added value. Value: 18
+2022/12/27 11:41:48 The value: %!(EXTRA int32=17)
+2022/12/27 11:41:50 Replica Manager 5002 added value. Value: 18
+2022/12/27 11:41:50 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:41:50 Replica Manager 5003 added value. Value: 18
+2022/12/27 11:41:50 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:41:50 Primary Replica 5001 added value. Value: 19
+2022/12/27 11:41:50 The value: %!(EXTRA int32=18)
+2022/12/27 11:41:52 Replica Manager 5002 added value. Value: 19
+2022/12/27 11:41:52 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:41:52 Replica Manager 5003 added value. Value: 19
+2022/12/27 11:41:52 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:41:52 The value: %!(EXTRA int32=19)
+2022/12/27 11:41:53 Primary Replica 5001 added value. Value: 20
+2022/12/27 11:41:55 Replica Manager 5002 added value. Value: 20
+2022/12/27 11:41:55 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:41:55 Replica Manager 5003 added value. Value: 20
+2022/12/27 11:41:55 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:41:55 Primary Replica 5001 added value. Value: 21
+2022/12/27 11:41:55 The value: %!(EXTRA int32=20)
+2022/12/27 11:41:57 Replica Manager 5002 added value. Value: 21
+2022/12/27 11:41:57 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:41:57 Replica Manager 5003 added value. Value: 21
+2022/12/27 11:41:57 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:41:57 The value: %!(EXTRA int32=21)
+2022/12/27 11:41:57 Primary Replica 5001 added value. Value: 22
+2022/12/27 11:41:59 Replica Manager 5002 added value. Value: 22
+2022/12/27 11:41:59 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:41:59 Replica Manager 5003 added value. Value: 22
+2022/12/27 11:41:59 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:41:59 Primary Replica 5001 added value. Value: 23
+2022/12/27 11:41:59 The value: %!(EXTRA int32=22)
+2022/12/27 11:42:01 Replica Manager 5002 added value. Value: 23
+2022/12/27 11:42:01 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:42:01 Replica Manager 5003 added value. Value: 23
+2022/12/27 11:42:01 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:42:01 Primary Replica 5001 added value. Value: 24
+2022/12/27 11:42:01 The value: %!(EXTRA int32=23)
+2022/12/27 11:42:03 Replica Manager 5002 added value. Value: 24
+2022/12/27 11:42:03 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:42:03 Replica Manager 5003 added value. Value: 24
+2022/12/27 11:42:03 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:42:03 Primary Replica 5001 added value. Value: 25
+2022/12/27 11:42:03 The value: %!(EXTRA int32=24)
+2022/12/27 11:42:05 Replica Manager 5002 added value. Value: 25
+2022/12/27 11:42:05 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:42:05 Replica Manager 5003 added value. Value: 25
+2022/12/27 11:42:05 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:42:05 The value: %!(EXTRA int32=25)
+2022/12/27 11:42:06 Primary Replica 5001 added value. Value: 26
+2022/12/27 11:42:08 Replica Manager 5002 added value. Value: 26
+2022/12/27 11:42:08 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:42:08 Replica Manager 5003 added value. Value: 26
+2022/12/27 11:42:08 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:42:08 Primary Replica 5001 added value. Value: 27
+2022/12/27 11:42:08 The value: %!(EXTRA int32=26)
+2022/12/27 11:42:10 Replica Manager 5002 added value. Value: 27
+2022/12/27 11:42:10 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:42:10 Replica Manager 5003 added value. Value: 27
+2022/12/27 11:42:10 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:42:10 Primary Replica 5001 added value. Value: 28
+2022/12/27 11:42:10 The value: %!(EXTRA int32=27)
+2022/12/27 11:42:12 Replica Manager 5002 added value. Value: 28
+2022/12/27 11:42:12 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:42:12 Replica Manager 5003 added value. Value: 28
+2022/12/27 11:42:12 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:42:12 Primary Replica 5001 added value. Value: 29
+2022/12/27 11:42:12 The value: %!(EXTRA int32=28)
+2022/12/27 11:42:14 Replica Manager 5002 added value. Value: 29
+2022/12/27 11:42:14 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:42:14 Replica Manager 5003 added value. Value: 29
+2022/12/27 11:42:14 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:42:14 The value: %!(EXTRA int32=29)
+2022/12/27 11:42:15 Primary Replica 5001 added value. Value: 30
+2022/12/27 11:42:17 Replica Manager 5002 added value. Value: 30
+2022/12/27 11:42:17 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:42:17 Replica Manager 5003 added value. Value: 30
+2022/12/27 11:42:17 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:42:17 Primary Replica 5001 added value. Value: 31
+2022/12/27 11:42:17 The value: %!(EXTRA int32=30)
+2022/12/27 11:42:19 Replica Manager 5002 added value. Value: 31
+2022/12/27 11:42:19 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:42:19 Replica Manager 5003 added value. Value: 31
+2022/12/27 11:42:19 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:42:19 Primary Replica 5001 added value. Value: 32
+2022/12/27 11:42:19 The value: %!(EXTRA int32=31)
+2022/12/27 11:42:21 Replica Manager 5002 added value. Value: 32
+2022/12/27 11:42:21 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:42:21 Replica Manager 5003 added value. Value: 32
+2022/12/27 11:42:21 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:42:21 Primary Replica 5001 added value. Value: 33
+2022/12/27 11:42:21 The value: %!(EXTRA int32=32)
+2022/12/27 11:42:23 Replica Manager 5002 added value. Value: 33
+2022/12/27 11:42:23 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:42:23 Replica Manager 5003 added value. Value: 33
+2022/12/27 11:42:23 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:42:23 The value: %!(EXTRA int32=33)
+2022/12/27 11:42:24 Primary Replica 5001 added value. Value: 34
+2022/12/27 11:42:26 Replica Manager 5002 added value. Value: 34
+2022/12/27 11:42:26 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:42:26 Replica Manager 5003 added value. Value: 34
+2022/12/27 11:42:26 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:42:26 Primary Replica 5001 added value. Value: 35
+2022/12/27 11:42:26 The value: %!(EXTRA int32=34)
+2022/12/27 11:42:28 Replica Manager 5003 added value. Value: 35
+2022/12/27 11:42:28 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:42:28 Replica Manager 5002 added value. Value: 35
+2022/12/27 11:42:28 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:42:28 The value: %!(EXTRA int32=35)
+2022/12/27 11:42:29 Primary Replica 5001 added value. Value: 36
+2022/12/27 11:42:31 Replica Manager 5002 added value. Value: 36
+2022/12/27 11:42:31 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:42:31 Replica Manager 5003 added value. Value: 36
+2022/12/27 11:42:31 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:42:31 Primary Replica 5001 added value. Value: 37
+2022/12/27 11:42:31 The value: %!(EXTRA int32=36)
+2022/12/27 11:42:33 Replica Manager 5003 added value. Value: 37
+2022/12/27 11:42:33 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:42:33 Replica Manager 5002 added value. Value: 37
+2022/12/27 11:42:33 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:42:33 The value: %!(EXTRA int32=37)
+2022/12/27 11:42:34 Primary Replica 5001 added value. Value: 38
+2022/12/27 11:42:36 Replica Manager 5002 added value. Value: 38
+2022/12/27 11:42:36 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:42:36 Replica Manager 5003 added value. Value: 38
+2022/12/27 11:42:36 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:42:36 Primary Replica 5001 added value. Value: 39
+2022/12/27 11:42:36 The value: %!(EXTRA int32=38)
+2022/12/27 11:42:38 Replica Manager 5003 added value. Value: 39
+2022/12/27 11:42:38 RMServer 5001: Value added to replica manager on port %!s(int32=5003): 
+2022/12/27 11:42:38 Replica Manager 5002 added value. Value: 39
+2022/12/27 11:42:38 RMServer 5001: Value added to replica manager on port %!s(int32=5002): 
+2022/12/27 11:42:38 The value: %!(EXTRA int32=39)
